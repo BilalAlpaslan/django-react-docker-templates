@@ -1,1 +1,0 @@
-# MOBİL APP REACT NATİVE
