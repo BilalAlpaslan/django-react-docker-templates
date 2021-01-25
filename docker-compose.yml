@@ -1,0 +1,21 @@
+services:
+
+  backend:
+    build:
+      context: .
+      dockerfile: ./docker/backend/Dockerfile
+    container_name: django
+    hostname: django
+    domainname: django.com
+    ports:
+      - 8000:8000 # expose ports - HOST:CONTAINER
+
+  frontend:
+    build:
+      context: .
+      dockerfile: ./docker/frontend/Dockerfile
+    container_name: react
+    hostname: react
+    domainname: react.com
+    ports: 
+      - 3000:3000
