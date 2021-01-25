@@ -8,7 +8,7 @@ services:
     hostname: django
     domainname: django.com
     ports:
-      - 8000:8000 # expose ports - HOST:CONTAINER
+      - 8000:8000
 
   frontend:
     build:
